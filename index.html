@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Home</title>
+    <link rel="shortcut icon" href="images/homeIcon.png" type="image/x-icon">
+
+<style>
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px;
+   
+}
+.examName{
+    color: rgb(234, 118, 10);
+}
+.examDetails{
+    color: rgb(50, 9, 138);
+    background-color: antiquewhite;
+}
+#name{
+    color: rgb(11, 11, 11);
+    margin-top: 13%;
+    text-align: left;
+    margin-left: 200px;
+}
+.submitButton{
+    background-color: rgb(21, 94, 230);
+    color:white ;
+    border-radius: 5px;
+}
+.feedbackSection{
+    text-align: left;
+    background-color: rgb(118, 208, 192);
+    border-radius: 10px;
+    margin-left: 0px;
+    padding-top: 20px;
+    padding-left: 15px;
+    border: 2px solid rgb(75, 6, 171);
+    width: 60%;
+    box-shadow: 5px 5px 10px rgb(9, 8, 8);
+}
+#welcomeLines{
+    text-align: justify;
+}
+body{
+    background-image:url(images/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#self_image{
+   height: 400px;
+   float: right;
+   margin-top: 0%;
+   transform: scaleX(-1);
+}
+#tagline{
+    /* display: block; */
+    color: rgb(115, 5, 5);
+    font-size: 12px;
+    margin-left: 180px;
+    margin-bottom: 80px;
+}
+.firstLetter{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navItems{
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    
+}
+.navItems:hover{
+    color: rgb(0, 102, 255);
+    
+}
+.Navigation{
+    margin-top: 20px;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="Navigation">
+        <a class="navItems" href="index.html">Home</a>
+        <a class="navItems" href="index.html">Education</a>
+        <a class="navItems" href="index.html">Skills</a>
+        <a class="navItems" href="index.html">Projects</a>
+        <a class="navItems" href="index.html">Experiences</a>
+        <a class="navItems" href="index.html">Interests</a>
+        <a class="navItems" href="index.html">Contacts</a>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <img id="self_image" src="images/sajib.png" alt="(Image Loading)"> <br>
+
+    <h1 id="name">Harun Or Rashid (Sajib)</h1> <br>
+    <div id="tagline"><p id="welcomeLines"><span class="firstLetter"> I</span> am a University student of 3rd year studying in <strong>Computer Science</strong> who is learning Basic <b> Web Development</b> starting with frontend technologies and determined to become of excellent service in different <b>IT<small>sectors</small></b> just as Web Development.</p>
+    </div>
+
+
+    <h3><u>Academic Qualifications</u></h3>
+    <ol>
+        <li class="examName"><b>JSC (Junior School Certificate) </b><ul type="disc">
+            <div class="examDetails">
+                <li >Institute: NKM High School & Homes, Narsingdi <a href="https://nkmhighschoolandhomes.edu.bd/" target="_blank">(Click to visit website)</a> </li>
+                <li>Passing Year: 2015</li>
+                <li>Result: GPA 5.00(All Subjects)</li>
+            </div>
+        </ul> </li>
+        <li class="examName"><b>SSC (Secondary School Certificate) </b><ul type="disc">
+            <div class="examDetails">
+                <li>Institute: NKM High School & Homes, Narsingdi <a href="http://nkmhighschoolandhomes.edu.bd/ "target="_blank">(Click to visit website)</a> </li>
+                <li>Passing Year: 2018</li>
+                <li>Result: GPA 5.00(All Subjects)</li>
+            </div>
+        </ul> </li>
+        <li class="examName"><b>HSC (Higher Secondary Certificate) </b><ul type="disc">
+            <div class="examDetails">
+                <li>Institute: Narsingdi Government College, Narsingdi <a href="http://narsingdigovtcollege.edu.bd/" target="_blank">(Click to visit website)</a> </li>
+                <li>Passing Year: 2020</li>
+                <li>Result: GPA 5.00(All Subjects)</li>
+            </div>
+        </ul> </li>
+        <li class="examName"><b>BSc (Bachelor of Science) </b><ul type="disc">
+            <div class="examDetails">
+                <li>Institute: Daffodil International University, Dhaka <a href="https://daffodilvarsity.edu.bd/" target="_blank">(Click to visit website)</a> </li>
+                <li>Department: Computer Science & Engineering</li>
+                <li>Passing Year: (Currently Studying)</li>
+                <li>Result: CGPA 3.70(Current Overall)</li>
+           </div>
+        </ul> </li>
+    </ol>
+
+<br><br><br>
+<div class="feedbackSection">
+    <div class="feedbackSectionContents"><h3><b>Feedback</b></h3>
+    <form >
+       <input type="text" id="feedbackName" placeholder="Your name"> <br><br>
+       <input type="date" id="birthdate" > <br><br>
+       <input type="email" id="email" placeholder="Your email"> <br><br>
+       <select name="typeOfFeedback" id="typeOfFeedback">
+        <option value="">Suggestion</option>
+        <option value="">Question</option>
+        <option value="">Report</option>
+       </select>        <br><br>
+       <input size="68" type="text" id="Feedback" placeholder="Write your feedback"> <br><br>
+       <input type="file" name="" id="">
+       <input class="submitButton" type="submit" id="">
+    </form> <br><br>
+   </div>
+</div>
+    <footer>
+        <small>All information and rights reserved.</small>
+    </footer>
+</body>
+</html>
