@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,60 +8,71 @@
     <title>Portfolio Home</title>
     <link rel="shortcut icon" href="images/homeIcon.png" type="image/x-icon">
 
-<style>
-
+    <style>
+        
 *{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin: 5px;
-   
-}
-.examName{
-    color: rgb(234, 118, 10);
-}
-.examDetails{
-    color: rgb(50, 9, 138);
-    background-color: antiquewhite;
-}
+    margin: 5px;}
+
 #name{
     color: rgb(11, 11, 11);
-    margin-top: 13%;
+    margin-top: 0px;
     text-align: left;
-    margin-left: 200px;
+    margin-left: 270px;
 }
 .submitButton{
-    background-color: rgb(21, 94, 230);
+    background-color: rgb(40, 93, 238);
+    border: 0px solid white;
     color:white ;
     border-radius: 5px;
+    height: 35px;
+    width: 75px;
+    font-size: 15px;
+    margin-left: 285px;
+}
+.chooseFile{
+    height: 40px;
+    width: 80px;
+    font-size: 15px;
+    margin-right: 50px;
 }
 .feedbackSection{
     text-align: left;
-    background-color: rgb(118, 208, 192);
-    border-radius: 10px;
-    margin-left: 0px;
-    padding-top: 20px;
-    padding-left: 15px;
+    background-color:rgb(47, 46, 46);
+    border-radius: 20px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    padding-top: 40px;
+    padding-left: 30px;
     border: 2px solid rgb(75, 6, 171);
-    width: 60%;
-    box-shadow: 5px 5px 10px rgb(9, 8, 8);
+    width: 46%;
+    box-shadow: 0px 0px 0px rgb(9, 8, 8);
 }
 #welcomeLines{
     text-align: justify;
 }
 body{
-    background-image:url(images/bg.jpg);
-    background-repeat: no-repeat;
+    background-color: antiquewhite;
     background-size: cover;
 }
-#self_image{
-   height: 400px;
-   float: right;
-   margin-top: 0%;
-   transform: scaleX(-1);
+#self_image {
+    height: 400px;
+    float: right;
+    margin-top: 0%;
+    transform: scaleX(-1);
+    transition: transform 0.3s ease; /* Adding a smooth transition */
 }
+
+#self_image:hover {
+
+    transform: scaleX(-1) scale(1.1); /* Enlarge the image by 10% */
+}
+
+
 #tagline{
     /* display: block; */
-    color: rgb(115, 5, 5);
-    font-size: 12px;
+    color: rgb(154, 81, 81);
+    font-size: 15px;
     margin-left: 180px;
     margin-bottom: 80px;
 }
@@ -69,23 +81,131 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .navItems{
-    margin: 10px;
+    margin: 20px;
     text-decoration: none;
     color: black;
-    
+    font-size: 20px;    
 }
 .navItems:hover{
-    color: rgb(0, 102, 255);
+    color: rgb(175, 5, 5);
     
 }
 .Navigation{
     margin-top: 20px;
+    margin-bottom: 30px;
 }
 
-</style>
 
+.container {
+    display: flex;
+    margin-top: 200px;
+}
+
+#codingGif {
+    flex: 0 0 auto;
+    margin-right: 20px; 
+    margin-left: 100px;
+}
+
+#tagline {
+    /* flex: 1; */
+    color: rgb(250, 246, 246);
+    font-size: 15px;
+    margin-bottom: 150px;
+    margin-left: -20px;
+    margin-top: 50px;
+    width: 500px;
+}
+#academics{
+    width: 1000px;
+    margin-left: 63px;
+    margin-top: 100px;
+    border: 2px solid rgb(75, 6, 171);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(9, 8, 8);
+    transition: transform 0.3s ease; /* Adding a smooth transition */
+
+}
+
+#academics:hover{
+
+    transform: scale(1.05); /* Enlarge the image by 10% */
+}
+   
+.examName{
+    color: rgb(175, 82, 6);
+    
+}
+.examDetails{
+    color: rgb(248, 247, 250);
+    background-color: rgb(98, 97, 98);
+    border-radius: 10px;
+    padding-left: 15px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+
+}
+.instituteLink{
+    text-decoration: none;
+    color: rgb(154, 211, 233);
+}
+
+.signature{
+    margin-top: 100px;
+    margin-left: 400px;
+}
+.pageTop{
+    background-image: url(images/bg.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.input{
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 0px 0px 2px rgb(9, 8, 8);
+}
+.Skills{
+    display: flex;
+    flex-direction: row;
+}
+.containerSkills{
+    width: 1000px;
+    margin-left: 150px;
+    margin-top: 40px;
+    border: 2px solid rgb(75, 6, 171);
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgb(9, 8, 8);
+    transition: transform 0.3s ease; /* Adding a smooth transition */
+    padding-left: 30px;
+
+
+}
+.containerSkills:hover{
+    transform: scale(1.05); /* Enlarge the image by 10% */
+
+}
+.skillNames{
+    color: rgb(175, 82, 6);
+}
+.portionTitle{
+    background-color: black;
+    border-radius: 15px;
+    color: rgb(217, 221, 221);
+    text-align: center;
+    padding: 2px;
+}
+
+
+
+</style>
 </head>
 <body>
+
+<div class="pageTop">
     <div class="Navigation">
         <a class="navItems" href="index.html">Home</a>
         <a class="navItems" href="index.html">Education</a>
@@ -94,82 +214,130 @@ body{
         <a class="navItems" href="index.html">Experiences</a>
         <a class="navItems" href="index.html">Interests</a>
         <a class="navItems" href="index.html">Contacts</a>
-
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <img id="self_image" src="images/sajib.png" alt="(Image Loading)"> <br>
 
-    <h1 id="name">Harun Or Rashid (Sajib)</h1> <br>
-    <div id="tagline"><p id="welcomeLines"><span class="firstLetter"> I</span> am a University student of 3rd year studying in <strong>Computer Science</strong> who is learning Basic <b> Web Development</b> starting with frontend technologies and determined to become of excellent service in different <b>IT<small>sectors</small></b> just as Web Development.</p>
+    <div class="signature">
+        <img src="images/selfSign.png" width="100px" alt="">
     </div>
 
+    <h1 id="name">Harun Or Rashid (Sajib)</h1> <br>
 
-    <h3><u>Academic Qualifications</u></h3>
-    <ol>
+    <div class="container">
+        <div id="codingGif">
+            <img style="border-radius: 10px;" src="images/coding.gif" width="250px" alt="">
+        </div>
+        
+        <div id="tagline">
+            <p id="welcomeLines"><span class="firstLetter"> I</span> am a University student of 3rd year studying in <strong>Computer Science</strong> who is learning Basic <b> Web Development</b> starting with frontend technologies and determined to become of excellent service in different <b>IT<small>sectors</small></b> just as Web Development.</p>
+        </div>
+    </div>
+    
+</div>
+<div  id="academics">
+    <h3  class="portionTitle"  style="margin-bottom: 10px;margin-left:10px;">Academic Qualifications</h3>
+    <ul>
         <li class="examName"><b>JSC (Junior School Certificate) </b><ul type="disc">
             <div class="examDetails">
-                <li >Institute: NKM High School & Homes, Narsingdi <a href="https://nkmhighschoolandhomes.edu.bd/" target="_blank">(Click to visit website)</a> </li>
+                <li >Institute: <a class="instituteLink" href="https://nkmhighschoolandhomes.edu.bd/" target="_blank">NKM High School & Homes, Narsingdi</a> </li>
                 <li>Passing Year: 2015</li>
                 <li>Result: GPA 5.00(All Subjects)</li>
             </div>
         </ul> </li>
         <li class="examName"><b>SSC (Secondary School Certificate) </b><ul type="disc">
             <div class="examDetails">
-                <li>Institute: NKM High School & Homes, Narsingdi <a href="http://nkmhighschoolandhomes.edu.bd/ "target="_blank">(Click to visit website)</a> </li>
+                <li>Institute: <a class="instituteLink" href="http://nkmhighschoolandhomes.edu.bd/ "target="_blank">NKM High School & Homes, Narsingdi</a> </li>
                 <li>Passing Year: 2018</li>
                 <li>Result: GPA 5.00(All Subjects)</li>
             </div>
         </ul> </li>
         <li class="examName"><b>HSC (Higher Secondary Certificate) </b><ul type="disc">
             <div class="examDetails">
-                <li>Institute: Narsingdi Government College, Narsingdi <a href="http://narsingdigovtcollege.edu.bd/" target="_blank">(Click to visit website)</a> </li>
+                <li>Institute: <a class="instituteLink" href="http://narsingdigovtcollege.edu.bd/" target="_blank">Narsingdi Government College, Narsingdi </a> </li>
                 <li>Passing Year: 2020</li>
                 <li>Result: GPA 5.00(All Subjects)</li>
             </div>
         </ul> </li>
         <li class="examName"><b>BSc (Bachelor of Science) </b><ul type="disc">
             <div class="examDetails">
-                <li>Institute: Daffodil International University, Dhaka <a href="https://daffodilvarsity.edu.bd/" target="_blank">(Click to visit website)</a> </li>
+                <li>Institute: <a class="instituteLink" href="https://daffodilvarsity.edu.bd/" target="_blank">Daffodil International University, Dhaka </a> </li>
                 <li>Department: Computer Science & Engineering</li>
                 <li>Passing Year: (Currently Studying)</li>
                 <li>Result: CGPA 3.70(Current Overall)</li>
            </div>
         </ul> </li>
-    </ol>
+    </ul>
+</div>
+
+
+
+<div class="containerSkills">
+    <h3 class="portionTitle" style="margin-left: -20px;">Skills</h3>
+
+    <div class="Skills">
+        
+
+        <div class="skills1">
+                <p class="skillNames"><b>Web Development</b></p> 
+                <ul style="list-style:disc">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+                <li>Javascript</li>
+                <li>NodeJS</li>
+                <li>ExpressJS</li>
+                <li>SQL</li></ul>
+        </div>
+
+        <div class="skills2">
+            <p class="skillNames"><b>Programming Languages</b></p> 
+            <ul style="list-style:disc">
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>Python</li></ul>
+        </div>
+
+        <div class="skills3">
+            <p class="skillNames"><b>Technologies</b></p> 
+            <ul style="list-style:disc">
+                <li>Microcontroller & Drones</li>
+                <li>Basic Artificial Intelligence & ML</li></ul>
+        </div>
+
+        <div class="skills4">
+            <p class="skillNames"><b> Essentials</b></p> 
+            <ul style="list-style:disc">
+                <li>Planning & Leadership</li>
+                <li>Presentation</li>
+                <li>Visual Designing</li>
+                <li>Basic Video Editing</li></ul>
+        </div>
+
+    </div>
+</div>
 
 <br><br><br>
 <div class="feedbackSection">
-    <div class="feedbackSectionContents"><h3><b>Feedback</b></h3>
+    <div class="feedbackSectionContents"><h3 style="color:white"><b>Feedback</b></h3>
     <form >
-       <input type="text" id="feedbackName" placeholder="Your name"> <br><br>
-       <input type="date" id="birthdate" > <br><br>
-       <input type="email" id="email" placeholder="Your email"> <br><br>
-       <select name="typeOfFeedback" id="typeOfFeedback">
-        <option value="">Suggestion</option>
-        <option value="">Question</option>
-        <option value="">Report</option>
+       <input class="input" type="text" id="feedbackName" placeholder="Your name"> <br><br>
+       <input class="input" type="date" id="birthdate" > <br><br>
+       <input class="input" type="email" id="email" placeholder="Your email"> <br><br>
+       <select class="input" name="typeOfFeedback" id="typeOfFeedback">
+        <option class="input" value="">Suggestion</option>
+        <option class="input" value="">Question</option>
+        <option class="input" value="">Report</option>
        </select>        <br><br>
-       <input size="68" type="text" id="Feedback" placeholder="Write your feedback"> <br><br>
-       <input type="file" name="" id="">
+       <input class="input" size="68" type="text" id="Feedback" placeholder="Write your feedback"> <br><br>
+       <input class="chooseFile" type="file" name="" id="">
        <input class="submitButton" type="submit" id="">
     </form> <br><br>
-   </div>
+   
 </div>
-    <footer>
-        <small>All information and rights reserved.</small>
-    </footer>
+ <div>  <footer>
+        <small style="color: rgb(174, 174, 174);">All information and rights reserved.</small>
+    </footer></div> 
 </body>
 </html>
